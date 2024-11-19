@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Football Team Cards</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 class="title">Team Stats</h1>
+  <main>
+    <div class="team-stats">
+      <p>Team: <span id="team"></span></p>
+      <p>Sport: <span id="sport"></span></p>
+      <p>Year: <span id="year"></span></p>
+      <p>Head Coach: <span id="head-coach"></span></p>
+    </div>
+    <label class="options-label" for="players">Filter Teammates:</label>
+    <select name="players" id="players">
+      <option value="all">All Players</option>
+      <option value="nickname">Players with Nicknames</option>
+      <option value="forward">Position Forward</option>
+      <option value="midfielder">Position Midfielder</option>
+      <option value="defender">Position Defender</option>
+      <option value="goalkeeper">Position Goalkeeper</option>
+    </select>
+    <div class="cards" id="player-cards">
+      <!-- Player cards will be dynamically generated here -->
+    </div>
+  </main>
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
